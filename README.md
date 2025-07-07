@@ -38,36 +38,23 @@ User-Management-Dashboard/
 
 🚀 Getting Started
 1️⃣ Clone the Repository
-bash
-Copy
-Edit
+
 git clone https://github.com/your-username/User-Management-Dashboard.git
 cd User-Management-Dashboard
 2️⃣ Setup Backend
 Go into the backend folder:
 
-bash
-Copy
-Edit
+
 cd backend
 Install dependencies:
 
-nginx
-Copy
-Edit
 npm install
 Create a .env file in the backend folder with:
 
-ini
-Copy
-Edit
 PORT=4000
 MONGO_URI=your_mongodb_connection_string
 Run the backend server:
 
-arduino
-Copy
-Edit
 npm run dev
 ✅ Backend API will be available at:
 http://localhost:4000/api/users
@@ -75,27 +62,17 @@ http://localhost:4000/api/users
 3️⃣ Setup Frontend
 Go into the frontend folder:
 
-bash
-Copy
-Edit
+
 cd frontend
 Install dependencies:
 
-nginx
-Copy
-Edit
 npm install
 Create a .env file in the frontend folder with:
 
-bash
-Copy
-Edit
+
 VITE_BASE_URL=http://localhost:4000/api
 Start the React app:
 
-arduino
-Copy
-Edit
 npm run dev
 ✅ Frontend will run at:
 http://localhost:5173 (or as shown in terminal)
@@ -107,9 +84,6 @@ Frontend: Vercel
 
 When deploying, update your frontend .env:
 
-ini
-Copy
-Edit
 VITE_BASE_URL=https://your-deployed-backend-url/api
 📥 CSV Export
 Click the "Download CSV" button in the dashboard to export the current user list as a .csv file.
