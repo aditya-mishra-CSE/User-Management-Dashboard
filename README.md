@@ -36,30 +36,83 @@ User-Management-Dashboard/
 ├── backend/ # Express + MongoDB API
 └── frontend/ # React frontend using Vite
 
-## 🚀 Getting Started
-
-### 🔧 1. Clone the Repository
-
-```bash
+🚀 Getting Started
+1️⃣ Clone the Repository
+bash
+Copy
+Edit
 git clone https://github.com/your-username/User-Management-Dashboard.git
 cd User-Management-Dashboard
+2️⃣ Setup Backend
+Go into the backend folder:
 
-###⚙️ 2. Setup Backend
+bash
+Copy
+Edit
 cd backend
-npm install
+Install dependencies:
 
-Create a .env file in the backend folder:
+nginx
+Copy
+Edit
+npm install
+Create a .env file in the backend folder with:
+
+ini
+Copy
+Edit
 PORT=4000
 MONGO_URI=your_mongodb_connection_string
-
 Run the backend server:
 
+arduino
+Copy
+Edit
 npm run dev
+✅ Backend API will be available at:
+http://localhost:4000/api/users
 
-Backend API will be available at: http://localhost:4000/api/users
+3️⃣ Setup Frontend
+Go into the frontend folder:
 
+bash
+Copy
+Edit
+cd frontend
+Install dependencies:
 
-🖥️ 3. Setup Frontend
+nginx
+Copy
+Edit
+npm install
+Create a .env file in the frontend folder with:
+
+bash
+Copy
+Edit
+VITE_BASE_URL=http://localhost:4000/api
+Start the React app:
+
+arduino
+Copy
+Edit
+npm run dev
+✅ Frontend will run at:
+http://localhost:5173 (or as shown in terminal)
+
+📤 Deployment
+Backend: Render
+
+Frontend: Vercel
+
+When deploying, update your frontend .env:
+
+ini
+Copy
+Edit
+VITE_BASE_URL=https://your-deployed-backend-url/api
+📥 CSV Export
+Click the "Download CSV" button in the dashboard to export the current user list as a .csv file.
 cd frontend
 npm install
 
