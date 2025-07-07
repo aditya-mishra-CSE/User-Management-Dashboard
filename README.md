@@ -36,8 +36,9 @@ User-Management-Dashboard/
 ├── backend/ # Express + MongoDB API
 └── frontend/ # React frontend using Vite
 
-🚀 Getting Started
-1️⃣ Clone the Repository
+###🚀 Getting Started
+
+##1️⃣ Clone the Repository
 
 git clone https://github.com/your-username/User-Management-Dashboard.git
 cd User-Management-Dashboard
